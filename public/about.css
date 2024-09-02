@@ -1,0 +1,386 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 35%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+    top:0;
+    cursor: pointer;
+}
+
+.navbar.sticky{
+    padding: 2px 0;
+    background-color: #020001a8;
+
+
+
+    
+}
+
+.nav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    
+
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    color: #00bcd4;
+    transition: 1s;
+}
+
+
+#search{
+    width: 150px;
+    padding: 2px;
+    font-size: 20px;
+    border-radius: 9px;
+    color: white;
+    background : none;
+    border: 2px solid white;
+}
+
+.background{
+    background:rgba(0, 0, 0, 0.6) url(image/mount.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+.firstSection{
+    height: 103vh;
+    text-align:left;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 90%;
+    margin: auto;
+    height: 80%;
+}
+
+.firstHalf{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:auto;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.secondHalf{
+    margin:auto;
+}
+
+.secondHalf img{
+    width: 55%;
+    border: 4px solid white;
+    border-radius: 15px;
+    padding: 6px;
+    display: block;
+    margin:auto;
+ 
+    
+    
+    
+}
+
+.text-big{
+    color:white;
+    font-size: 40px;
+}
+.text-small{
+    font-size: 15px;
+}
+
+.btn{
+    padding: 2px 27px;
+    margin: 7px 2.8px;
+    border: 2px solid white;
+    font-size: 16px;
+    border-radius: 19px;
+    background: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+/* .btn:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+} */
+
+.btn-sm{
+    padding: 5px 40px;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+.section{
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 80%;
+    padding: 20px;
+    margin-top: -25px;
+    padding: 38px;
+}
+
+.section img{
+    width: 200px;
+}
+.paras{
+    padding: 60px 65px;
+}
+.left{
+    flex-direction: row-reverse;
+}
+
+.contact{
+    /* background-color:#adafaa; */
+    background-color: rgb(218, 218, 218);
+    height: 50%;
+    font-size: 100%;
+    
+}
+.text-center{
+    height: 50%;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    /* margin: 50px; */
+    
+}
+
+.form{
+    max-width: 50%;
+    margin:42px auto;
+    
+}
+.form-input{
+    width: 90%;
+    border: 1px solid black;
+    font-size: 17px;
+    color: black;
+    padding: 3px;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+.darkclass{
+    border: 1px solid black;
+    color:black ;
+}
+.text-footer{
+    background-color:black;
+    color: white;
+    font-size: 12px;
+}
+
+.thumbnail img{
+    width: 290px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-top: 50px;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+@media only screen and (max-width:900px){
+    /* .nav-list{
+        flex-direction: column;
+        transform: translateX(100%);
+    } */
+    .rightNav{
+        text-align: center;
+    }
+    .h-nav-resp{
+        height: 55px;
+    }
+
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{ 
+        text-align: center;
+    }
+    .paras{
+        padding: 0;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+/* nevbar */
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    /* padding: 30px 0; */
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    
+}
+
+.navbar.sticky{
+    padding: 2px 0;
+    background-color: #020001a8;
+
+
+
+    
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.navbar .logo img{
+    width: 50px;
+    height: 70px;
+    margin-left: -20px;
+    
+}
+
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 65px;
+    transition: color 0.3s ease;
+
+}
+
+.navbar .menu li a:hover{
+    color:#00bcd4;
+    
+}
+.navbar.sticky .menu li a:hover{
+    color:#00bcd4;
+  
+}
+
+
+/* menu btn styling */
+.menu-btn{
+    color:#00bcd4   ;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background:#00bcd4;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
+section{
+    color: white;
+    background: rgb(34, 34, 34);
+    border-radius: 15px;
+}
+body{
+    background: black;
+}
+
+.bigtext{
+    font-size: 60px;
+}
+

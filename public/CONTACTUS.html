@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="max-width">
+            <div class="logo" style="margin-top: 5px;">
+                <!-- <img src="images/main logo2.png"> -->
+                <h2 class="logo1">Pet's Food shop</h2>
+
+            </div>
+            <ul class="menu">
+
+                <li><a href="HOME.html" class="menu-btn">Home</a></li>
+                <li><a href="comingsoon.html" class="menu-btn">Coming Soon</a></li>
+                <!-- <li><a href="contectus.html" class="menu-btn">Contact Us</a></li> -->
+                <li><a href="ABOUT.html" class="menu-btn">About</a></li>
+            </ul>
+             <div class="menu-btn" style="color: #fff;"><<
+             </div>
+           
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="user singinBx">
+                <div class="imgBx"><img src="image/login.jpeg"></div>
+                <div class="formBx">
+                    <form>
+                        <h2 onclick="login()">Send Messages</h2>
+                        <input type="text" name="" placeholder="Username">
+                        <input type="email" name="" placeholder="Email">
+                        <input type="text" name="" placeholder="Subject">
+                        <input type="text" name="" placeholder="Feedback">
+                        <input type="submit" name="" value="Send Message">
+                        <p class="signup">Get in touch <a href="#" onclick="toggleForm();">Come here</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user singupBx">
+                <div class="formBx">
+                    <form>
+                        <h2>Contact Us</h2>
+                        <!-- <input type="text" name="" placeholder="Username">
+                        <input type="email" name="" placeholder="Email Address">
+                        <input type="password" name="" placeholder="Create Password">
+                        <input type="password" name="" placeholder="Confirm Password">
+                        <input type="submit" name="" value="Submit"> -->
+                        <div class="contactus">
+                            <p>Phone : 7434060729</p>
+                            <p>Emal :parth67ml@gmail.com</p>
+                            <p>Address : 16,pet's food shop,near ganesh mandir,surat-395009</p>
+                            <!-- <p>Follw us on <a href="#"><i class="fab fa-facebook-f"></i></a></p> -->
+                        </div>
+                        <p class="signup">Want to <a href="#" onclick="toggleForm();">send message ?</a></p>
+                    </form>
+                </div>
+                <div class="imgBx"><img src="image/login2.jpeg"></div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function toggleForm(){
+            var container = document.querySelector('.container');
+            container.classList.toggle('active')
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
